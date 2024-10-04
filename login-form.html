@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(139, 137, 137);
+        }
+
+        .container1 {
+            width: 100%;
+            height: 45rem;
+            align-content: center;
+        }
+
+        .container2 {
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            display: grid;
+            grid-template-rows: 150px 170px 100px;
+            margin: auto;
+            /* align-content: center; */
+            box-shadow: 5px 7px 5px black;
+        }
+
+        .container2>div {
+            padding: 30px 0 10px 0;
+            background-color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1,
+        span {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            color: brown;
+        }
+
+        .d1>span {
+            font-size: 20px;
+        }
+
+        .d1 {
+            text-align: center;
+            align-content: center;
+        }
+
+        input {
+            display: flex;
+            margin: auto;
+            padding: 8px;
+            width: 50%;
+            margin-bottom: 10px;
+            background-color: white;
+            /* border: none; */
+            border: 1px solid rgb(183, 170, 170);
+        }
+
+        button {
+            width: 40%;
+            padding: 5px;
+            margin-top: 20px;
+            border: none;
+            background-color: brown;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .link-con {
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        a {
+            background-color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        form {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="container2">
+            <div class="d1">
+                <h1>User Login Form!</h1>
+                <span>Please login</span>
+            </div>
+            <div class="d1">
+                <form action="">
+                    <input type="text" name="user" placeholder="User name" required>
+                    <input type="password" name="pass" placeholder="Password" required>
+                    <button type="submit" name="submit">Log in</button>
+                </form>
+            </div>
+            <div class="link-con">
+                <a href="#">Forgot Password</a>
+                <a href="#">Register</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
