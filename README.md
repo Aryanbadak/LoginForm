@@ -1,2 +1,2 @@
 # LoginForm
-this is basic login form create using HTML & CSS
+this is basic login form create by using HTML & CSS
